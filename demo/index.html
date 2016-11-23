@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>sweet-element demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../super-hover/super-hover.html">
+
+    <link rel="import" href="../sweet-element.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+
+      h2 { color: blue; }
+      sweet-element { color: blue; }
+
+  :root { 
+    --primary-color: purple;
+    --secdonardy-color: purple;
+    --3-color: purple;
+  }
+     
+
+    </style>
+  </head>
+  <body>
+
+    <div class="vertical-section-container centered">
+      <h3>Basic sweet-element Demo</h3>
+      <demo-snippet>
+        <template>
+          <sweet-element></sweet-element>
+        </template>
+      </demo-snippet>
+
+
+      <h3>Super Hover</h3>
+      <demo-snippet>
+        <template>
+          <super-hover>
+            hello!
+          </super-hover>
+        </template>
+      </demo-snippet>
+    </div>
+
+  </body>
+</html>
