@@ -1,6 +1,7 @@
 {
   "name": "sweet-element",
-  "description": "it&#39;s so sweet",
+  "version": "0.0.2",
+  "description": "it's so sweet",
   "main": "sweet-element.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
