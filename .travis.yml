@@ -21,4 +21,5 @@ script:
 
 # Sauce Labs
 # - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then polymer test -s 'default'; fi
-- bash ./gpages_build.sh oneezy sweet-element "Justin O'Neill'" justin@oneezy.com
+# - bash ./gpages_build.sh oneezy sweet-element "Justin O'Neill'" justin@oneezy.com
+- if [ "$TRAVIS_BRANCH" = "master" ]; then ./gpages_build.sh oneezy sweet-element "Justin O'Neill'" justin@oneezy.com; fi
