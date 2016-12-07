@@ -1,4 +1,10 @@
-# \<sweet-element\>
+_[Demo and API Docs](https://oneezy.github.io/sweet-element)_
+
+# Sweet Element
+
+[![Build Status](https://travis-ci.org/oneezy/sweet-element.svg?branch=master)](https://travis-ci.org/oneezy/sweet-element)
+
+
 
 it&#39;s so sweet
 
