@@ -4,6 +4,8 @@ sudo: required
 dist: trusty
 addons:
   firefox: latest
+
+  # Sauce Labs
   # sauce_connect: true
   apt:
     sources:
@@ -16,5 +18,7 @@ install:
 - bower install
 script:
 - xvfb-run polymer test
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then polymer test -s 'default'; fi
+
+# Sauce Labs
+# - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then polymer test -s 'default'; fi
 - bash ./gpages_build.sh oneezy sweet-element "Justin O'Neill'" justin@oneezy.com
