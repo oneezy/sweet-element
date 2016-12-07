@@ -16,8 +16,7 @@ node_js:
 before_script:
 - npm install -g bower polymer-cli
 - bower install
-- bower install -s oneezy/build-tools
-# - bower install -s https://${GH_TOKEN}@github.com/Collaborne/collaborne-build-tools.git
+- bower install -s https://${GH_TOKEN}@github.com/oneezy/build-tools.git
 - export PATH=$PWD/node_modules/.bin:$PATH
 script:
 - xvfb-run polymer test
