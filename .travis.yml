@@ -4,9 +4,6 @@ sudo: required
 dist: trusty
 addons:
   firefox: latest
-
-  # Sauce Labs
-  # sauce_connect: true
   apt:
     sources:
     - google-chrome
@@ -18,8 +15,8 @@ install:
 - bower install
 script:
 - xvfb-run polymer test
-
-# Sauce Labs
-# - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then polymer test -s 'default'; fi
-# - bash ./gpages_build.sh oneezy sweet-element "Justin O'Neill'" justin@oneezy.com
-- if [ "$TRAVIS_BRANCH" = "master" ]; then ./gpages_build.sh oneezy sweet-element "Justin O'Neill'" justin@oneezy.com; fi
+- if [ "$TRAVIS_BRANCH" = "master" ]; then ./gpages_build.sh oneezy sweet-element
+  "Justin O'Neill'" justin@oneezy.com; fi
+env:
+  global:
+    secure: y6OM3AB2KALwyRWxf1xYbCkl3HnoUcYCRVeue0nfZnONtdRzqIvpk5i9NXrLIrT99w8u6V180PP7kg0Ra9UMu0vqgd7XbK2/0572WF1v+Hi/lN4PXn/Ae2vvggoT6zh4NC7oEIAPk+ptst8LXndM9tRIBy36KPFTayp7iQAyMqOZZDzKjyskQU4kLnlH3gcay4D1YdCeSi6Yrt/rC5zqzqjbOx4C8PWFyscMKyLm2rr08MCK2OXvyaqJ9tBU1ix7e2YEVlXPj7x9/OqSXPRL1r5GlEYDEP/MVgn3SQK5BAodnwoJ7QApIhgRjddj0Gz2qsPJGNndaje2uLKWtilSuBJzXy/BH7MQ2p5iCAlw53eCkywmmfcsjM+oNWsQVM5gIdAF0V+gnHNngQ1RyPc+yMKKAZk/Qtt5uP0dvxqLeowTJVTWRzIfjam5XeDyJM3fIl/rMAP7amT0NgUZ7neMwgBtlzaIjqnG+x+pyO8LFlAuDf0O25hlBqFDfM0cUFtpf6WY5na57xGCtPfpH/6Y7htuUMAOxIqztoq1RXk7qZsE108WSZcAec/PJqYonn2U8DoSDMA7c6bgY4za5P/V3SpldJuG3ajmj6AHFOmEH3B8ov/OIIGx7qvu7S/8pz15onAo5llL3X7ryI8Z9Zi/pKOQqikSQIaxUjyAJiKr72A=
