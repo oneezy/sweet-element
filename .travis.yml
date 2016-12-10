@@ -9,14 +9,18 @@ addons:
     - google-chrome
     packages:
     - google-chrome-stable
+    
 install:
 - npm install -g bower polymer-cli
 - npm install
 - bower install
+
 script:
 - xvfb-run polymer test
-- if [ "$TRAVIS_BRANCH" = "master" ]; then ./gpages_build.sh oneezy sweet-element
-  "Justin O'Neill'" justin@oneezy.com; fi
+
+after_success:
+- if [ "$TRAVIS_BRANCH" = "master" ]; then 
+  ./gpages_build.sh oneezy sweet-element "Justin O'Neill'" justin@oneezy.com; fi
 
 env:
   global:
