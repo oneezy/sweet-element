@@ -9,7 +9,7 @@ addons:
     - google-chrome
     packages:
     - google-chrome-stable
-    
+
 install:
 - npm install -g bower polymer-cli
 - npm install
@@ -24,5 +24,5 @@ after_success:
 
 env:
   global:
-    - GH_REF=github.com/oneezy/sweet-element
+    - GH_REF: github.com/oneezy/sweet-element
     - secure: p1OHpnsMIpMjQ4yiFAZJoDZBr/5VHXel+HHC9s8O+MvIqyv5IdxNexkmQKYJneDfYG8XZ/8aNoP4Bsiycysw5POCX1Z9BAwkEBIQ8rdgslzNoWronbtAZUBQAUFxQoVaKt1hBLXNpfyrfRGIfNtAKgA8pekurvIcgjnPmzsNGWr1ztj2y7/5mR7VZZQy3bcM9cZNZLUymyr+RENOXufJnPG2ve/yha/VynUz2mPWEIQPPhg17ar2ICWZL0EZjG6lajR5g83TtSrDxRN2tTGpVWlKVi6udDB/JU+RLt744qhblXwRpFqh1E7r2xUxJWvibQt+UtuRwi6iNJxAy40/XW6Ss/unkwjmRZgU+G98Z3ojJj8Nrp9xah0H2S6M2CH8ySYHnBO6FhunQ3oeXYUn7mYyRiWRz1sjBn0rhWorD67pBFRKIRKFjPPlD9BuI/l/mD8ulgLa7IJFnkt5ZHJx3cWU/BGQ8xLcfor4SgkE4sxlZQWkkn2m2gwvw33JJP6Vv97cs/mgEYORVlBGdG5eAQc1+k18sbGTbbZZojJr5wp4c9VrnDKA7Ztt70ygSHn4etQRogngKPsrKHWnK2q1zBlWoTDq5zjdYZFQt+VC8fET87VUH5Rl7Cn9Chjg8ybY1a4Dq4zKM4uJVKsAYtL+GYNS/kQ/Vgpsd+UTVGx/lDA=
