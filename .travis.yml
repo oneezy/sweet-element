@@ -30,7 +30,7 @@ script:
 after_success: 
    '[ ${TRAVIS_PULL_REQUEST} = "false" ] && 
     [ ${TRAVIS_BRANCH} = "master" ] && 
-    bower install -s https://${GH_TOKEN}@github.com/oneezy/build-tools && 
+    bower install -s https://${GH_TOKEN}@github.com/oneezy/build-tools.git && 
     bower_components/build-tools/gpages_build.sh oneezy justinoneill2007+builds@gmail.com'
 
 
