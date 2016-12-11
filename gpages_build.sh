@@ -22,6 +22,9 @@ name=$3
 email=$4
 branch=${5:-"master"} # default to master when branch isn't specified
 
+GH_REF="github.com/${TRAVIS_REPO_SLUG}"
+
+
 mkdir temp && cd temp
 
 # make folder (same as input, no checking!)
