@@ -23,10 +23,6 @@ install:
 script:
 - xvfb-run polymer test
 
-# after_success:
-# - if [ "$TRAVIS_BRANCH" = "master" ]; then 
-#   ./gpages_build.sh "Travis CI" builds@travis-ci.org; fi
-
 after_success: 
    '[ ${TRAVIS_PULL_REQUEST} = "false" ] && 
     [ ${TRAVIS_BRANCH} = "master" ] && 
