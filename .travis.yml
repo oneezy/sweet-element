@@ -23,15 +23,15 @@ install:
 script:
 - xvfb-run polymer test
 
-after_success:
-- if [ "$TRAVIS_BRANCH" = "master" ]; then 
-  ./gpages_build.sh "Travis CI" builds@travis-ci.org; fi
+# after_success:
+# - if [ "$TRAVIS_BRANCH" = "master" ]; then 
+#   ./gpages_build.sh "Travis CI" builds@travis-ci.org; fi
 
-# after_success: 
-#    '[ ${TRAVIS_PULL_REQUEST} = "false" ] && 
-#     [ ${TRAVIS_BRANCH} = "master" ] && 
-#     $(npm bin)/bower install -s https://${GH_TOKEN}@github.com/Collaborne/collaborne-build-tools.git && 
-#     bower_components/collaborne-build-tools/gpages_build.sh Collaborne info@collaborne.com'
+after_success: 
+   '[ ${TRAVIS_PULL_REQUEST} = "false" ] && 
+    [ ${TRAVIS_BRANCH} = "master" ] && 
+    $(npm bin)/bower install -s https://${GH_TOKEN}@github.com/oneezy/build-tools.git && 
+    bower_components/build-tools/gpages_build.sh oneezy justinoneill2007+builds@gmail.com'
 
 
 env:
