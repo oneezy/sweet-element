@@ -10,6 +10,11 @@ addons:
     packages:
     - google-chrome-stable
 
+cache:
+  directories:
+  - node_modules
+  - "$HOME/.cache/bower"
+
 install:
 - npm install -g bower polymer-cli
 - npm install
