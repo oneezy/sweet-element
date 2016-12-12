@@ -1,0 +1,49 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`sweet-element`
+It's so sweet
+
+@demo demo/index.html 
+-->
+
+<dom-module id="sweet-element">
+  <template>
+    <style is="custom-style">
+      :host {
+        display: block;
+        color: black;
+      }
+
+      h1 { color: var(--primary-color, black); }
+      h2 { color: var(--secondary-color, black); }
+      p  { color: var(--p-color, black); }
+
+
+    </style>
+
+    <!-- Shadow DOM -->
+    <h1>This will become MASTER</h1>
+
+    <h2>Hello [[name]]</h2>
+
+    <p>This is a description!</p>
+
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'sweet-element',
+
+      properties: {
+        name: {
+          type: String,
+          value: 'sweet-element',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
